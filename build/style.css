@@ -173,7 +173,7 @@ a.explore-btn {
 }
 
 @media (max-width: 48em) {
-  body {
+  .home-body {
     background: #0e141e url("./images/background-home-tablet.jpg") no-repeat
       center center/cover;
   }
