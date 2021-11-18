@@ -5,11 +5,11 @@ var list = document.querySelector(".navigation-list");
 menu.addEventListener("click", function () {
   var buttonImage = document.getElementById("menu-logo");
 
-  if (buttonImage.src.match("./images/icon-hamburger.svg")) {
+  if (buttonImage.src.match("./images/icon-hamburger.77a5b926.svg")) {
     buttonImage.src = "./images/icon-close.svg";
     menu.setAttribute("aria-expanded", "true");
   } else {
-    buttonImage.src = "./images/icon-hamburger.svg";
+    buttonImage.src = "./images/icon-hamburger.77a5b926.svg";
     menu.setAttribute("aria-expanded", "false");
   }
 
