@@ -67,7 +67,7 @@ nav ul.navigation-list {
   -ms-flex-align: center;
   align-items: center;
   width: 60vw;
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: #0B2945;
   
 }
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
