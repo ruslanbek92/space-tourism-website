@@ -216,6 +216,12 @@ a.explore-btn {
     margin-top: 12.1vh;
     width: 58.6vw;
   }
+  
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    a.explore-btn {
+      margin-top: 15vh;
+    }
+  }
   .text-container {
     width: 100%;
   }
