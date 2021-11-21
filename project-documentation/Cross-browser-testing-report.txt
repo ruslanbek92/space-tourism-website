@@ -1,0 +1,63 @@
+Cross-Browser Testing Report
+                      Home Page
+
+Desktop Browser Testing:
+
+Testing done for 6 tests-
+Bg Img presence and switching during window resizing.
+svg logo presence
+google fonts support
+navbar opacity presence
+explore button  and navbar links hover effect presence
+Respponsiveness.
+
+
+Browsers and versions:
+Chrome 95 installed on my PC, Chrome 94,93 from testingbot.com.
+Firefox 94 installed on my PC, 93,92 from testingbot.com.
+Edge 95,93 installed on my PC, 94 from testingbot.com
+Safari 14, 13 (Tesing was not impossible on 15 due to unavailability)
+
+Results:
+On Chrome and Edge (on all versions) result were succesfull. Everything is behaved as expected. 
+
+On Firefox backdrop-filter css property didn't work, it is not supported in ff browsers. For firefox, navbar bg color is changed and blur effect is not used. FF browsers targeted with @supports. Except this, everything is worked as expected.
+
+On Safari, webkit-backdrop-filter is not behaving as expected. I couldn't find out the cause for it. Edxcept this,  everything is worked as expected.
+
+
+
+
+Mobile/Tablet Browser Testing:
+
+Testing done for  tests-
+Bg Img presence and switching during window resizing.
+svg logo presence
+google fonts support
+navbar opacity presence
+explore button  and navbar links hover effect disability presence
+hamburger menu funcionality correctness,navlink should appear  on hamburger menu click , and disappear on the next click(in case of mobile devices with the max width of 375px) 
+Respponsiveness.
+
+Devices and browsers:
+Real devices on hand:
+Samsung A30: Firefox 94,Chrome 96,Samsung internet 15 ,Opera on Android 65
+Samsung  J2 2016:Samsung internet 15,Chrome 95,Firefox. 94,Opera on Android 65
+Samsung J 260F: Chrome 96. 
+Surface Pro4 tablet mode :Chrome 95, Edge 95, Firefox 95. 
+
+Devices and simulators from testingbot.com:
+Iphone XR version 12.01, iphone 11 safari 14.0, iphone 11  pro safari 14.0, iphone 8 safari 14, Galaxy s8 chrome 88, firefox 88,iphone 8 plus safari on 14
+Pixel 3 10.0 Chrome 74, Pixel C 8.0  Chrome 78, 
+Samsung Galaxy S8 :Chrome 88, Firefox 88
+
+Results:
+On all real devices on hand all tasted succeeded. 
+On Device simulators, on iPhones, iPads with Safari 14, and on other devices with Chrome below 80, css gap property didn't worked as it was not supported. 
+Except that all tests succeeded. 
+
+
+
+
+
+

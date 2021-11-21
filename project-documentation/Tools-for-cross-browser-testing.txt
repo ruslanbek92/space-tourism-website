@@ -1,0 +1,10 @@
+1.Gulp task runner for automating testing tools 
+2.gulp-htmltidy for html linting and formatting
+3.gulp-csslint for linting css
+4.gulp-jshint
+5.gulp-autoprefixer  to scan our CSS and add vendor prefixes only where needed
+6.gulp-babel to transpile any new JavaScript syntax features to traditional syntax that works in older browsers
+7.parcel for minification,tree shaking and cache busting. 
+8. gulp-axe-webdriver for accessibility checking. 
+9.npm package manager  will be used. 
+10.Testingbot.com cross browser testing service for cross browser testing. 

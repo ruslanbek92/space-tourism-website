@@ -1,0 +1,18 @@
+Test Criteria for Desktop:
+. Background-image should work on both A and C 
+. svg log and navigation should work on both categories
+. google fonts should be supported on both categories.
+. navbar opacity is supported on both categories
+. explore button and nav links  hover effect should work only on desktop, not in tablet and mobile (on both categories)
+. tab should be accessible for both categories
+
+in tablet mode:
+.bg image should change on all categories
+.line in the header should get lost both categories
+. nav link anchors should get broder bottom when hovered, on both categories.
+. numbers of navlink anchor tag texts needs to disappear, on both categories. 
+
+Mobile:
+.nav link should disappear on both categories
+.navlink should appear  on hamburger menu click , and disappear on the next click on both categories.
+. 
