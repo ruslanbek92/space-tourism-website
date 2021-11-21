@@ -1,0 +1,8 @@
+                           Accessibility Statement
+HTML's sematically correctness is checked by validator.w3.org online tool
+CSS is turned off to check if content makes sense.
+Keyboard accessibility can be achieved by tab and tab+shift keys.
+Site's color contrast is checked by webaim.org contrast checker tool.
+Sites is run by Wave auditing tool:no errors.
+Site is checked by NVDA screen reader. 
+ARIA is used at appropriate places  for improving accessibility. 
