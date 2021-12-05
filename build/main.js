@@ -38,7 +38,7 @@ var clickHandler = function clickHandler(e) {
           planetImg.src="./images/image-moon.png" 
           break;
           case "mars-tab":
-            console.log("mars is working");
+            
             planetImg.src="./images/image-mars.png" 
            
             break;
