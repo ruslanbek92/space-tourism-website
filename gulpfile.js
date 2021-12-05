@@ -15,9 +15,9 @@ exports.default=function(cb){
 }
 
 function html(cb){
-    return gulp.src("./src/html-files/home.html")
+    return gulp.src("./src/html-files/*")
     .pipe(htmltidy())
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build/"));
     cb();
 }
 function css(cb) {
@@ -43,7 +43,7 @@ function js(cb) {
 function axeFunc (cb) {
     var options = {
       saveOutputIn: 'allHtml.json',
-      urls: ['./src/html-files/home.html']
+      urls: ['./src/html-files/*']
     };
     return axe(options);	
   }

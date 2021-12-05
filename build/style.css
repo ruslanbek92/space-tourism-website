@@ -30,13 +30,14 @@ body {
   align-items: center;
   margin-top: 40px;
 }
-
-.header hr {
-  width: 31vw;
+hr {
   border-top: 0.01vh solid rgba(255, 255, 255, 0.459);
   border-bottom: none;
   border-left: none;
   border-right: none;
+}
+.header hr {
+  width: 31vw;
   -webkit-transform: translateX(3vw);
   -ms-transform: translateX(3vw);
   transform: translateX(3vw);
@@ -66,14 +67,13 @@ nav ul.navigation-list {
   -ms-flex-align: center;
   align-items: center;
   width: 60vw;
-  background-color: #0B2945;
-  
+  background-color: #0b2945;
 }
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none){
-  nav ul.navigation-list{
-   background-color:rgba(255, 255, 255, 0.04);
--webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
+@supports ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+  nav ul.navigation-list {
+    background-color: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
   }
 }
 .navigation-list a {
@@ -117,7 +117,7 @@ nav ul.navigation-list {
   font-family: "Bellefair", serif;
   font-weight: 400;
   font-size: 10.4vw;
-  color:#ffffff;
+  color: #ffffff;
   line-height: 1.14;
   text-transform: uppercase;
   padding: 1.8vw 0px;
@@ -167,16 +167,111 @@ a.explore-btn {
   transition: box-shadow 400ms ease-in-out;
   transition: box-shadow 400ms ease-in-out, -webkit-box-shadow 400ms ease-in-out;
 }
+
+/* Destinations page specific styles*/
+.destination-heading {
+  margin: 5.3vw 0 0 11.52vw;
+  width: 59vw;
+  text-align: start !important;
+}
+
+.h5-numbers {
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+  padding-right: 2vw;
+}
+.section-destination {
+  margin: 4.4vw 0 7.7vw 16vw;
+  width: 73vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.planet-image {
+  aspect-ratio: attr(width) / attr(height);
+  width: 31vw;
+  height: auto;
+}
+.tab-container {
+  width: 31.5vw;
+}
+.tablist {
+  list-style-type: none;
+  padding: 0;
+  width: 25vw;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navigation-text {
+  text-transform: uppercase;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 15px;
+  line-height: 1.2;
+  letter-spacing: 2.55px;
+  padding-bottom: 13px;
+}
+.heading-2 {
+  margin-top: 35px;
+  font-family: "Bellefair", sans-serif;
+  font-size: 7vw;
+  line-height: 1.14;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.tab-container hr {
+  margin-top: 3.75vw;
+}
+.facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  gap: 5.5vw;
+  margin-top: 30px;
+}
+.heading-6 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 2.36px;
+  color: rgba(208, 214, 249, 1);
+  text-transform: uppercase;
+}
+.subheading-1 {
+  font-family: "Bellefair", sans-serif;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 12px;
+}
+/*targeting pointer supported devices for  links.*/
 @media (hover: hover) and (pointer: fine) {
   a.explore-btn:hover {
     -webkit-box-shadow: 0 0 0 5vw rgba(255, 255, 255, 0.1);
     box-shadow: 0 0 0 5vw rgba(255, 255, 255, 0.1);
   }
-  .navigation-list a:hover {
+  .navigation-list a:hover,
+  .tablist a:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
 }
-
 @media (max-width: 48em) {
   .home-body {
     background: #0e141e url("./images/background-home-tablet.jpg") no-repeat
@@ -215,7 +310,7 @@ a.explore-btn {
     margin-top: 12.1vh;
     width: 58.6vw;
   }
-  
+
   @supports (-webkit-touch-callout: none) and (not (translate: none)) {
     a.explore-btn {
       margin-top: 15vh;
@@ -237,7 +332,7 @@ a.explore-btn {
     letter-spacing: 3.38px;
   }
 
- .heading-5,
+  .heading-5,
   p {
     text-align: center;
   }
@@ -247,7 +342,52 @@ a.explore-btn {
     margin: 0 auto;
     font-size: 4.2vw;
   }
+  /* Destination specific styles */
+  .destination-heading {
+    margin-left: 5vw;
+  }
+  .section-destination {
+    margin: 7.8vw 0 7.7vw 12.6vw;
+    width: 74.6vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .planet-image {
+    width: 39vw;
+  }
+  .tab-container {
+    width: 100%;
+    margin: 7vw;
+  }
+  .tablist {
+    width: 47vw;
+    margin: 0 auto;
+  }
+  .heading-2 {
+    font-size: 10.6vw;
+    text-align: center;
+  }
+  .tab-container hr {
+    margin-top: 6.4vw;
+  }
+  .facts {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .heading-6 {
+    text-align: center;
+  }
+  .subheading-1 {
+    text-align: center;
+  }
 }
+
 @media (max-width: 23.44em) {
   .menu-button {
     display: block;
@@ -326,5 +466,33 @@ a.explore-btn {
     width: 40vw;
     height: 40vw;
     margin: 0 auto;
+  }
+  /*Destinations page specific styles*/
+  .destination-heading {
+    margin: 6.4vw auto 0 auto;
+  }
+  .section-destination {
+    margin: 8.53vw 0 15.46vw 6.4vw;
+    width: 87.2vw;
+  }
+  .planet-image {
+    width: 45.3vw;
+  }
+  .tablist {
+    width: 63.2vw;
+    height: 28px;
+  }
+  .heading-2 {
+    margin-top: 20px;
+    font-size: 15vw;
+  }
+  .facts {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
 }
