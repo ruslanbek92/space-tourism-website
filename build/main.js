@@ -20,6 +20,7 @@ var arrayOfTablist = document.querySelectorAll(".navigation-text");
 
 var clickHandler = function clickHandler(e) {
   var arrayOfTabpanels = document.querySelectorAll(".tabpanel");
+  let planetImg=document.getElementById("planet-img");
   arrayOfTabpanels.forEach(function (el) {
     if (el.getAttribute("aria-labelledby") == e.target.id) {
       e.target.ariaSelected = "true";
@@ -31,6 +32,23 @@ var clickHandler = function clickHandler(e) {
           elem.classList.remove("visited-link");
         }
       });
+       switch (e.target.id) {
+        case "moon-tab":
+          
+          planetImg.src="./images/image-moon.png" 
+          break;
+          case "mars-tab":
+            console.log("mars is working");
+            planetImg.src="./images/image-mars.png" 
+           
+            break;
+          case "europa-tab":
+            planetImg.src="./images/image-europa.png" 
+            break;
+            case "titan-tab":
+              planetImg.src="./images/image-titan.png" 
+              break;
+      }
     } else {
       var attr = document.createAttribute("hidden");
       el.setAttributeNode(attr);
