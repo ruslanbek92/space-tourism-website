@@ -35,18 +35,18 @@ var clickHandler = function clickHandler(e) {
        switch (e.target.id) {
         case "moon-tab":
           
-          planetImg.src="./images/image-moon.png" 
+          planetImg.src="./image-moon.b20b8139.png" 
           break;
           case "mars-tab":
             
-            planetImg.src="./images/image-mars.png" 
+            planetImg.src="./image-mars.png" 
            
             break;
           case "europa-tab":
-            planetImg.src="./images/image-europa.png" 
+            planetImg.src="./image-europa.png" 
             break;
             case "titan-tab":
-              planetImg.src="./images/image-titan.png" 
+              planetImg.src="./image-titan.png" 
               break;
       }
     } else {
