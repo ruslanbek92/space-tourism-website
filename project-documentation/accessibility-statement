@@ -1,8 +1,18 @@
                            Accessibility Statement
+  Home Page:
 HTML's sematically correctness is checked by validator.w3.org online tool
 CSS is turned off to check if content makes sense.
 Keyboard accessibility can be achieved by tab and tab+shift keys.
 Site's color contrast is checked by webaim.org contrast checker tool.
-Sites is run by Wave auditing tool:no errors.
-Site is checked by NVDA screen reader. 
+Site is run by Wave auditing tool:no errors.
+Page  is tested with NVDA screen reader. 
+ARIA is used at appropriate places  for improving accessibility. 
+
+Destinations Page:
+HTML's sematically correctness is checked by validator.w3.org online tool
+CSS is turned off to check if content makes sense.
+Keyboard accessibility can be achieved by tab, Return and tab+shift keys.
+Site is run by Wave auditing tool:no errors.
+Site is run by Axe DevTools extension. It shown no serious or critical issues, except 6 moderate issues. 
+Page is tested with NVDA screen reader. 
 ARIA is used at appropriate places  for improving accessibility. 
