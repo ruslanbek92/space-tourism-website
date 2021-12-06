@@ -240,8 +240,13 @@ a.explore-btn {
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  gap: 5.5vw;
   margin-top: 30px;
+}
+.flexbox-gap .facts {
+  gap: 5.5vw;
+}
+.no-flexbox-gap .facts .second-fact{
+margin-left:5.5vw;
 }
 .heading-6 {
   font-family: "Barlow Condensed", sans-serif;
