@@ -55,7 +55,7 @@ Samsung Galaxy S8 :Chrome 88, Firefox 88
 Results:
 On all real devices on hand all tasted succeeded. 
 On Device simulators, on iPhones, iPads with Safari 14, and on other devices with Chrome below 80, css gap property didn't worked as it was not supported. 
-Except that all tests succeeded. 
+This problem is fixed with feature detecting JS code and substituting gap effect with css margin.  
 
 
                                                                             Destinations Page
