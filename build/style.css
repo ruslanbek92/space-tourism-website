@@ -316,6 +316,9 @@ margin-left:5.5vw;
     width: 58.6vw;
   }
 
+  .no-flexbox-gap a.explore-btn{
+  margin-top:15vh;
+  }
   @supports (-webkit-touch-callout: none) and (not (translate: none)) {
     a.explore-btn {
       margin-top: 15vh;
