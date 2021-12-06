@@ -1,5 +1,6 @@
-Cross-Browser Testing Report
-                      Home Page
+                                                                     Cross-Browser Testing Report
+                                                                     
+                                                                              Home Page
 
 Desktop Browser Testing:
 
@@ -16,7 +17,7 @@ Browsers and versions:
 Chrome 95 installed on my PC, Chrome 94,93 from testingbot.com.
 Firefox 94 installed on my PC, 93,92 from testingbot.com.
 Edge 95,93 installed on my PC, 94 from testingbot.com
-Safari 14, 13 (Tesing was not impossible on 15 due to unavailability)
+Safari 15,14, 13 
 
 Results:
 On Chrome and Edge (on all versions) result were succesfull. Everything is behaved as expected. 
@@ -57,7 +58,19 @@ On Device simulators, on iPhones, iPads with Safari 14, and on other devices wit
 Except that all tests succeeded. 
 
 
+                                                                            Destinations Page
 
+Desktop Browser Testing:
+Testing done for tests-
+Bg Img presence.
+smooth switching of the tab and picture in the tab panel. 
+Respponsiveness.
+
+Browsers and versions:
+Same combination as in the Home Page.
+
+Results:
+Everything behaved as expected in all except safari 14 and 13. css gap property is not supported by those versions. I had to write feature detection Js code to detect safari browsers with above versions and make css gap property effect is substituted with margin.
 
 
 
