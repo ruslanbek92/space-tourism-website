@@ -503,4 +503,7 @@ margin-left:5.5vw;
     -ms-flex-align: center;
     align-items: center;
   }
+  .no-flexbox-gap .facts .second-fact{
+margin:5.5vw 0 0 0;
+}
 }
