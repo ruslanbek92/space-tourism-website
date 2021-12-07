@@ -5,7 +5,8 @@ CSS is turned off to check if content makes sense.
 Keyboard accessibility can be achieved by tab and tab+shift keys.
 Site's color contrast is checked by webaim.org contrast checker tool.
 Site is run by Wave auditing tool:no errors.
-Page  is tested with NVDA screen reader. 
+Page  is tested with NVDA screen reader on Windows.
+Page is tested with Android Voice assisstant. 
 ARIA is used at appropriate places  for improving accessibility. 
 
 Destinations Page:
