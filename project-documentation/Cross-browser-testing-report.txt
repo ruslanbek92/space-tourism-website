@@ -66,6 +66,7 @@ Testing done for tests-
 Bg Img presence.
 smooth switching of the tab and picture in the tab panel. 
 Respponsiveness.
+Keyboard accessibility. 
 
 Browsers and versions:
 Same combination as in the Home Page.
@@ -73,5 +74,24 @@ Same combination as in the Home Page.
 Results:
 Everything behaved as expected in all except safari 14 and 13. css gap property is not supported by those versions. I had to write feature detection Js code to detect safari browsers with above versions and make css gap property effect is substituted with margin.
 
+Mobile/Tablet Browser Testing:
+Testing done for  tests-
+Bg Img presence.
+smooth switching of the tab and picture in the tab panel. 
+hamburger menu function. 
 
+Devices and browsers:
+Real devices on hand:
+Samsung A30: Firefox 94,Chrome 96,Samsung internet 15 ,Opera on Android 65
+Samsung  J2 2016:Samsung internet 15,Chrome 95,Firefox. 94,Opera on Android 65
+Samsung J 260F: Chrome 96. 
+Surface Pro4 tablet mode :Chrome 95, Edge 95, Firefox 95. 
+
+Devices and simulators from testingbot.com:
+Iphone XR version 12.01, iphone 11 safari 14.0, iphone 11  pro safari 14.0, iphone 8 safari 14, Galaxy s8 chrome 88, firefox 88,iphone 8 plus safari on 14
+Pixel 3 10.0 Chrome 74, Pixel C 8.0  Chrome 78, 
+Samsung Galaxy S8 :Chrome 88, Firefox 88
+
+Results:
+In real devices tests succeeded. In emulators with IoS safari 14 css gap property didn't work as its not supported, problem is solved with feature detection.  
 
