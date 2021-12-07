@@ -4,13 +4,14 @@
 
 Desktop Browser Testing:
 
-Testing done for 6 tests-
+Testing done for 7 tests-
 Bg Img presence and switching during window resizing.
 svg logo presence
 google fonts support
 navbar opacity presence
 explore button  and navbar links hover effect presence
 Respponsiveness.
+Keyboard accessibility
 
 
 Browsers and versions:
