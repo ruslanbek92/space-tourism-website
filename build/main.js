@@ -35,7 +35,7 @@ var clickHandler = function clickHandler(e) {
 
       switch (e.target.id) {
         case "moon-tab":
-          planetImg.src = "/image-moon.png";
+          planetImg.src = "/image-moon.b20b8139.png";
           break;
 
         case "mars-tab":
