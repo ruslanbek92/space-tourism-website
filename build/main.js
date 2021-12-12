@@ -107,28 +107,28 @@ var crewClickHandler = function crewClickHandler(ev) {
 
       switch (ev.target.id) {
         case "commander-tab":
-          specialistImg.src = "./images/image-douglas-hurley.40559e77.png";
+          specialistImg.src = "/image-douglas-hurley.40559e77.png";
           crewSection.style.gap = "5vw";
           break;
 
         case "specialist-tab":
           specialistImg.width = "433";
           specialistImg.height = "568";
-          specialistImg.src = "./images/image-mark-shuttleworth.png";
+          specialistImg.src = "/image-mark-shuttleworth.png";
           crewSection.style.gap = "0";
           break;
 
         case "pilot-tab":
           specialistImg.width = "549";
           specialistImg.height = "645";
-          specialistImg.src = "./images/image-victor-glover.png";
+          specialistImg.src = "/image-victor-glover.png";
           crewSection.style.gap = "5vw";
           break;
 
         case "engineer-tab":
           specialistImg.width = "575";
           specialistImg.height = "602";
-          specialistImg.src = "./images/image-anousheh-ansari.png";
+          specialistImg.src = "/image-anousheh-ansari.png";
           crewSection.style.gap = "5vw";
           break;
       }
