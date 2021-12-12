@@ -107,7 +107,7 @@ var crewClickHandler = function crewClickHandler(ev) {
 
       switch (ev.target.id) {
         case "commander-tab":
-          specialistImg.src = "../images/image-douglas-hurley.png";
+          specialistImg.src = "../images/image-douglas-hurley.40559e77.png";
           crewSection.style.gap = "5vw";
           break;
 
