@@ -336,6 +336,10 @@ a.explore-btn {
   border-radius: 50%;
   background-color: #363841;
   border: 1px solid #ffffff;
+  font-size:0;
+  line-height:0;
+  color:transparent;
+  
 }
 .active-circle,
 .active-circle:hover {
