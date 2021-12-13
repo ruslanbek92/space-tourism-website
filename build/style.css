@@ -367,8 +367,17 @@ margin-top:2vw;
 .flexbox-gap #specialist-image {
  height: auto;
 }
-.no-flexbox-gap #specialist-image{
-height:calc(35.7vw*calc(attr(width) / attr(height)))
+.no-flexbox-gap .douglas{
+height:calc(35.7vw*calc(675/514))
+}
+.no-flexbox-gap .shuttleworth{
+height:calc(35.7vw*calc(568/433))
+}
+.no-flexbox-gap .glover{
+height:calc(35.7vw*calc(645/549))
+}
+.no-flexbox-gap .anousheh{
+height:calc(35.7vw*calc(602/575))
 }
 
 /*targeting pointer supported devices for  links.*/
