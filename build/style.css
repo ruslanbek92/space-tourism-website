@@ -367,7 +367,7 @@ margin-top:2vw;
 .flexbox-gap #specialist-image {
  height: auto;
 }
-no-flexbox-gap #specialist-image{
+.no-flexbox-gap #specialist-image{
 height:calc(35.7vw*calc(attr(width) / attr(height)))
 }
 
