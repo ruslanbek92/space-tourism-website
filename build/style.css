@@ -360,9 +360,15 @@ margin-top:2vw;
 #specialist-image {
   aspect-ratio: attr(width) / attr(height);
   width: 35.7vw;
-  height: auto;
+ 
   -webkit-box-shadow: 0px 0.2vw 0px #383b4b;
   box-shadow: 0px 0.2vw 0px #383b4b;
+}
+.flexbox-gap #specialist-image {
+ height: auto;
+}
+no-flexbox-gap #specialist-image{
+height:calc(35.7vw*calc(attr(width) / attr(height)))
 }
 
 /*targeting pointer supported devices for  links.*/
