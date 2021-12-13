@@ -17,3 +17,15 @@ Site is run by Wave auditing tool:no errors.
 Site is run by Axe DevTools extension. It shown no serious or critical issues, except 6 moderate issues. 
 Page is tested with NVDA screen reader. 
 ARIA is used at appropriate places  for improving accessibility. 
+
+Crew Page:
+HTML's sematically correctness is checked by validator.w3.org online tool, no erros.
+CSS is turned off to check if content makes sense. Tab interactivity was not possoble when css is turned off. it was due to empty link used as a tab. 
+To solve this, link is  given a text content and it is made invisible by css(by giving font-size,linie-height 0 value and color a transparent value).
+Keyboard accessibility can be achieved by tab and tab+shift, enter keys. Its not working only in firefox. That will be searched during cross browser testing. 
+Page is color contrast is checked by webaim.org contrast checker tool.No errors. 
+Page  is run by Wave auditing tool:no errors.
+Page  is tested with NVDA screen reader on Windows.
+Page  is run by Axe DevTools extension. It shown no serious or critical issues, except 6 moderate issues. 
+ARIA is used at appropriate places  for improving accessibility. 
+
