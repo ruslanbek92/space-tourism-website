@@ -280,7 +280,13 @@ a.explore-btn {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  
+}
+.flexbox-gap .section-crew{
   gap: 5vw;
+}
+.no-flexbox-gap #specialist-image{
+margin-left:5vw;
 }
 .tab-container-crew {
   display: -webkit-box;
@@ -294,6 +300,12 @@ a.explore-btn {
   -ms-flex-pack: start;
   justify-content: flex-start;
   gap: 2vw;
+}
+.flexbox-gap .tab-container-crew{
+  gap: 2vw;
+}
+.no-flexbox-gap .crew-tablist{
+margin-top:2vw;
 }
 .info {
   margin-top: 15vw;
@@ -494,8 +506,14 @@ a.explore-btn {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    gap: 5.2vw !important;
+   
   }
+  .flexbox-gap .section-crew{
+     gap: 5.2vw !important;
+}
+  .no-flexbox-gap #specialist-image{
+    margin-top:5.2vw;
+}
   .tab-container-crew {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -646,8 +664,14 @@ a.explore-btn {
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    gap: 8.5vw !important;
+    
     width: 87.2vw;
+  }
+  .flexbox-gap .section-crew{
+    gap: 8.5vw !important;
+}
+  .no-flexbox-gap .tab-container-crew{
+ margin-top:8.5vw;
   }
   .tab-container-crew {
     -webkit-box-orient: vertical;
