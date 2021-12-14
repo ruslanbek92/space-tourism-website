@@ -25,7 +25,7 @@ To solve this, link is  given a text content and it is made invisible by css(by 
 Keyboard accessibility can be achieved by tab and tab+shift, enter keys. Its not working only in firefox. That will be searched during cross browser testing. 
 Page is color contrast is checked by webaim.org contrast checker tool.No errors. 
 Page  is run by Wave auditing tool:no errors.
-Page  is tested with NVDA screen reader on Windows.
+Page  is tested with NVDA screen reader on Windows. Page is run by Android Voice assistant, no errors. 
 Page  is run by Axe DevTools extension. It shown no serious or critical issues, except 6 moderate issues. 
 ARIA is used at appropriate places  for improving accessibility. 
 
