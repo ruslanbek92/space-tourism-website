@@ -728,4 +728,16 @@ height:calc(59.4vw*calc(602/575))
   #specialist-image {
     width: 47.2vw;
   }
+  .no-flexbox-gap .douglas{
+height:calc(47.2vw*calc(675/514))
+}
+.no-flexbox-gap .shuttleworth{
+height:calc(47.2vw*calc(568/433))
+}
+.no-flexbox-gap .glover{
+height:calc(47.2vw*calc(645/549))
+}
+.no-flexbox-gap .anousheh{
+height:calc(47.2vw*calc(602/575))
+}
 }
