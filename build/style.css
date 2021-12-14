@@ -530,6 +530,18 @@ height:calc(35.7vw*calc(602/575))
   .no-flexbox-gap #specialist-image{
     margin-top:5.2vw;
 }
+.no-flexbox-gap .douglas{
+height:calc(59.4vw*calc(675/514))
+}
+.no-flexbox-gap .shuttleworth{
+height:calc(59.4vw*calc(568/433))
+}
+.no-flexbox-gap .glover{
+height:calc(59.4vw*calc(645/549))
+}
+.no-flexbox-gap .anousheh{
+height:calc(59.4vw*calc(602/575))
+}
   .tab-container-crew {
     -webkit-box-align: center;
     -ms-flex-align: center;
