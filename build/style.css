@@ -391,7 +391,7 @@ height:calc(35.7vw*calc(602/575))
   .tablist a:hover {
     border-bottom: 3px solid rgba(255, 255, 255, 0.5);
   }
-  .crew-tablist a.circle:hover {
+  .crew-tablist a.circle:hover, a.circle:focus {
     background-color: #86878c;
   }
 }
