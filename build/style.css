@@ -195,6 +195,10 @@ a.explore-btn {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
+.planet-img-container{
+display:flex;
+align-items:center;
+}
 .planet-image {
   aspect-ratio: attr(width) / attr(height);
   width: 31vw;
