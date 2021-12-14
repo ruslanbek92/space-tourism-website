@@ -115,3 +115,5 @@ All functionality behaved as expected in all browsers and versions, except css g
 Problem with css gap is solved as same problem solved in previous pages. 
 Due to the bug(?) in the SAfari 14 and below versions browser didn't calculate images aspect ratio properly and gave image a height mentioned in the html in all resoulitions. Which caused the image get stretched in naroower windows. Simply, browser didn't use height:auto property in a proper way. To tackle this, I had to detect Safari 14 and below versions with JS feature detection code, and in main.js inside tab click handler function , in the switch case I have given appropriate class names to each image which can be used  in css in giviving each image calculated height based on each images aspect ratio. 
 
+In firefox, tab circles received weak native focus style. It was nearly impossible to feel that circle is tabbed. This was tackled with giving hover effect styles to  :focus state.Know circle,when tabbed  gets same  styles as it gets on hover.     
+
