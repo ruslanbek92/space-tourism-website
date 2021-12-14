@@ -706,6 +706,7 @@ height:calc(59.4vw*calc(602/575))
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
+    margin-bottom:4vh;
   }
   .heading-2 {
     font-size: 6.4vw;
