@@ -282,6 +282,7 @@ a.explore-btn {
   justify-content: flex-start;
   
 }
+/* flexbox-gap and no-flexbox-gap classes are given to html by feature JS detection code. That code detects browsers that do and do not support flexbox gap property (its safari 14 and below versions)  */
 .flexbox-gap .section-crew{
   gap: 5vw;
 }
