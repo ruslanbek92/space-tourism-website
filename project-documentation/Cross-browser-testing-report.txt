@@ -95,3 +95,23 @@ Samsung Galaxy S8 :Chrome 88, Firefox 88
 Results:
 In real devices tests succeeded. In emulators with IoS safari 14 css gap property didn't work as its not supported, problem is solved with feature detection.  
 
+
+                                                                            Crew Page
+
+Desktop Browser Testing:
+
+Testing done for tests-
+Bg Img presence and color fallback in case of low network.
+Tab functionality: tab button has different colors for different states. tab is switched images when clicked. 
+Tab  has appropriate layout. 
+Respponsiveness.
+Keyboard accessibility
+
+Browsers and versions:
+Same mentioned in Home Page.
+
+Results
+All functionality behaved as expected in all browsers and versions, except css gap property, and css height:auto not worked in Safari 14 and below version. 
+Problem with css gap is solved as same problem solved in previous pages. 
+Due to the bug(?) in the SAfari 14 and below versions browser didn't calculate images aspect ratio properly and gave image a height mentioned in the html in all resoulitions. Which caused the image get stretched in naroower windows. Simply, browser didn't use height:auto property in a proper way. To tackle this, I had to detect Safari 14 and below versions with JS feature detection code, and in main.js inside tab click handler function , in the switch case I have given appropriate class names to each image which can be used  in css in giviving each image calculated height based on each images aspect ratio. 
+
