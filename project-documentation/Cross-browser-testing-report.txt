@@ -23,9 +23,12 @@ Safari 15,14, 13
 Results:
 On Chrome and Edge (on all versions) result were succesfull. Everything is behaved as expected. 
 
-On Firefox backdrop-filter css property didn't work, it is not supported in ff browsers. For firefox, navbar bg color is changed and blur effect is not used. FF browsers targeted with @supports. Except this, everything is worked as expected.
+On Firefox backdrop-filter css property didn't work, it is not supported in ff browsers. 
+For firefox, navbar bg color is changed and blur effect is not used. 
+FF browsers targeted with @supports. Except this, everything is worked as expected.
 
-On Safari, webkit-backdrop-filter is not behaving as expected. I couldn't find out the cause for it. Edxcept this,  everything is worked as expected.
+On Safari, webkit-backdrop-filter is not behaving as expected. 
+I couldn't find out the cause for it. Edxcept this,  everything is worked as expected.
 
 
 
@@ -38,7 +41,8 @@ svg logo presence
 google fonts support
 navbar opacity presence
 explore button  and navbar links hover effect disability presence
-hamburger menu funcionality correctness,navlink should appear  on hamburger menu click , and disappear on the next click(in case of mobile devices with the max width of 375px) 
+hamburger menu funcionality correctness,navlink should appear  on hamburger menu click , 
+and disappear on the next click(in case of mobile devices with the max width of 375px) 
 Respponsiveness.
 
 Devices and browsers:
@@ -49,16 +53,18 @@ Samsung J 260F: Chrome 96.
 Surface Pro4 tablet mode :Chrome 95, Edge 95, Firefox 95. 
 
 Devices and simulators from testingbot.com:
-Iphone XR version 12.01, iphone 11 safari 14.0, iphone 11  pro safari 14.0, iphone 8 safari 14, Galaxy s8 chrome 88, firefox 88,iphone 8 plus safari on 14
+Iphone XR version 12.01, iphone 11 safari 14.0, iphone 11  pro safari 14.0,
+iphone 8 safari 14, Galaxy s8 chrome 88, firefox 88,iphone 8 plus safari on 14
 Pixel 3 10.0 Chrome 74, Pixel C 8.0  Chrome 78, 
 Samsung Galaxy S8 :Chrome 88, Firefox 88
 
 Results:
 On all real devices on hand all tasted succeeded. 
-On Device simulators, on iPhones, iPads with Safari 14, and on other devices with Chrome below 80, css gap property didn't worked as it was not supported. 
+On Device simulators, on iPhones, iPads with Safari 14, and on other devices with Chrome below 80,
+css gap property didn't worked as it was not supported. 
 This problem is fixed with feature detecting JS code and substituting gap effect with css margin.  
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
                                                                             Destinations Page
 
 Desktop Browser Testing:
@@ -72,7 +78,10 @@ Browsers and versions:
 Same combination as in the Home Page.
 
 Results:
-Everything behaved as expected in all except safari 14 and 13. css gap property is not supported by those versions. I had to write feature detection Js code to detect safari browsers with above versions and make css gap property effect is substituted with margin.
+Everything behaved as expected in all except safari 14 and 13. 
+css gap property is not supported by those versions. 
+I had to write feature detection Js code to detect safari browsers with
+above versions and make css gap property effect is substituted with margin.
 
 Mobile/Tablet Browser Testing:
 Testing done for  tests-
@@ -88,13 +97,17 @@ Samsung J 260F: Chrome 96.
 Surface Pro4 tablet mode :Chrome 95, Edge 95, Firefox 95. 
 
 Devices and simulators from testingbot.com:
-Iphone XR version 12.01, iphone 11 safari 14.0, iphone 11  pro safari 14.0, iphone 8 safari 14, Galaxy s8 chrome 88, firefox 88,iphone 8 plus safari on 14
+Iphone XR version 12.01, iphone 11 safari 14.0, iphone 11  pro safari 14.0,
+iphone 8 safari 14, Galaxy s8 chrome 88, firefox 88,iphone 8 plus safari on 14
 Pixel 3 10.0 Chrome 74, Pixel C 8.0  Chrome 78, 
 Samsung Galaxy S8 :Chrome 88, Firefox 88
 
 Results:
-In real devices tests succeeded. In emulators with IoS safari 14 css gap property didn't work as its not supported, problem is solved with feature detection.  
+In real devices tests succeeded. 
+In emulators with IoS safari 14 css gap property didn't work as its not supported,
+problem is solved with feature detection.  
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
                                                                             Crew Page
 
@@ -111,9 +124,41 @@ Browsers and versions:
 Same mentioned in Home Page.
 
 Results
-All functionality behaved as expected in all browsers and versions, except css gap property, and css height:auto not worked in Safari 14 and below version. 
+All functionality behaved as expected in all browsers and versions, except css gap property, 
+and css height:auto not worked in Safari 14 and below version. 
 Problem with css gap is solved as same problem solved in previous pages. 
-Due to the bug(?) in the SAfari 14 and below versions browser didn't calculate images aspect ratio properly and gave image a height mentioned in the html in all resoulitions. Which caused the image get stretched in naroower windows. Simply, browser didn't use height:auto property in a proper way. To tackle this, I had to detect Safari 14 and below versions with JS feature detection code, and in main.js inside tab click handler function , in the switch case I have given appropriate class names to each image which can be used  in css in giviving each image calculated height based on each images aspect ratio. 
+Due to the bug(?) in the SAfari 14 and below versions browser didn't calculate images 
+aspect ratio properly and gave image a height mentioned in the html in all resoulitions.
+Which caused the image get stretched in naroower windows. Simply, 
+browser didn't use height:auto property in a proper way. To tackle this,
+I had to detect Safari 14 and below versions with JS feature detection code,
+and in main.js inside tab click handler function , 
+in the switch case I have given appropriate class names to each image which can be
+used  in css in giviving each image calculated height based on each images aspect ratio. 
 
-In firefox, tab circles received weak native focus style. It was nearly impossible to feel that circle is tabbed. This was tackled with giving hover effect styles to  :focus state.Know circle,when tabbed  gets same  styles as it gets on hover.     
+In firefox, tab circles received weak native focus style.
+It was nearly impossible to feel that circle is tabbed. 
+This was tackled with giving hover effect styles to  :focus state.Know circle,
+when tabbed  gets same  styles as it gets on hover.
+
+Mobile/Tablet Browser Testing:
+
+Testing done for  tests-
+Bg Img presence.
+smooth switching of the tab and picture in the tab panel. 
+Tab picture layout. 
+
+Devices and browsers:
+Real devices on hand:
+Samsung A30: Firefox 94,Chrome 96,Samsung internet 15 ,Opera on Android 65
+Samsung  J2 2016:Samsung internet 15,Chrome 95,Firefox. 94,Opera on Android 65
+Surface Pro4 tablet mode :Chrome 95, Edge 95, Firefox 95. 
+Real devices on testingbot:  Iphone  XR version 12.01 Safarin 12, Galaxy S8 V9, on Chrome 88, Samsung Internet13,Firefox  88. 
+Testing bot emulators:
+Iphone Pro 9.7 inch on Safari 14, Iphone 11 on 14, Iphone 11 Pro on 14, iphone 8 safari on 14 ios, iphone 8 plus safari on 14 ios,
+
+Results:
+All tests succeeded in all devices, browsers and versions! 
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
