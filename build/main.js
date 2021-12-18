@@ -87,7 +87,6 @@ if (checkFlexGap()) {
 
 var arrayOfCrewTablist = document.querySelectorAll(".navigation-circle");
 var crewSection = document.querySelector(".section-crew");
-console.log(crewSection);
 
 var crewClickHandler = function crewClickHandler(ev) {
   var arrayOfTabpanels = document.querySelectorAll(".info");
@@ -110,8 +109,8 @@ var crewClickHandler = function crewClickHandler(ev) {
           specialistImg.width = "514";
           specialistImg.height = "675";
           specialistImg.src = "/image-douglas-hurley.40559e77.png";
-          specialistImg.className=" "
-          specialistImg.classList.add("douglas")
+          specialistImg.className = " ";
+          specialistImg.classList.add("douglas");
           crewSection.style.gap = "5vw";
           break;
 
@@ -119,8 +118,8 @@ var crewClickHandler = function crewClickHandler(ev) {
           specialistImg.width = "433";
           specialistImg.height = "568";
           specialistImg.src = "/image-mark-shuttleworth.png";
-          specialistImg.className=" "
-          specialistImg.classList.add("shuttleworth")
+          specialistImg.className = " ";
+          specialistImg.classList.add("shuttleworth");
           crewSection.style.gap = "0";
           break;
 
@@ -128,8 +127,8 @@ var crewClickHandler = function crewClickHandler(ev) {
           specialistImg.width = "549";
           specialistImg.height = "645";
           specialistImg.src = "/image-victor-glover.png";
-          specialistImg.className=" "
-          specialistImg.classList.add("glover")
+          specialistImg.className = " ";
+          specialistImg.classList.add("glover");
           crewSection.style.gap = "5vw";
           break;
 
@@ -137,8 +136,8 @@ var crewClickHandler = function crewClickHandler(ev) {
           specialistImg.width = "575";
           specialistImg.height = "602";
           specialistImg.src = "/image-anousheh-ansari.png";
-          specialistImg.className=" "
-          specialistImg.classList.add("anousheh")
+          specialistImg.className = " ";
+          specialistImg.classList.add("anousheh");
           crewSection.style.gap = "5vw";
           break;
       }
@@ -151,4 +150,53 @@ var crewClickHandler = function crewClickHandler(ev) {
 
 arrayOfCrewTablist.forEach(function (element) {
   element.addEventListener("click", crewClickHandler);
+}); // code for technology page
+
+var arrayOfTechTablist = document.querySelectorAll(".technology-circles");
+
+var techClickHandler = function clickHandler(e) {
+  var arrayOfTabpanels = document.querySelectorAll(".info-technology");
+  var imgFirstSrc = document.getElementById("firstSrc");
+  var imgSecondSrc = document.getElementById("secondSrc");
+  var techImg = document.getElementById("technology-img");
+  arrayOfTabpanels.forEach(function (elm) {
+    if (elm.getAttribute("aria-labelledby") == e.target.id) {
+      e.target.ariaSelected = "true";
+      elm.removeAttribute("hidden");
+      e.target.classList.add("active-circle");
+      arrayOfTechTablist.forEach(function (elem) {
+        if (e.target.id !== elem.id) {
+          elem.ariaSelected = "false";
+          elem.classList.remove("active-circle");
+        }
+      });
+
+      switch (e.target.id) {
+        case "vehicle-tab":
+          techImg.src = "../images/image-launch-vehicle-landscape.jpg";
+          imgFirstSrc.srcset = "../images/image-launch-vehicle-landscape.jpg";
+          imgSecondSrc.srcset = "../images/image-launch-vehicle-portrait.jpg";
+          break;
+
+        case "spaceport-tab":
+          techImg.src = "../images/image-spaceport-landscape.jpg";
+          imgFirstSrc.srcset = "../images/image-spaceport-landscape.jpg";
+          imgSecondSrc.srcset = "../images/image-spaceport-portrait.jpg";
+          break;
+
+        case "capsule-tab":
+          techImg.src = "../images/image-space-capsule-landscape.jpg";
+          imgFirstSrc.srcset = "../images/image-space-capsule-landscape.jpg";
+          imgSecondSrc.srcset = "../images/image-space-capsule-portrait.jpg";
+          break;
+      }
+    } else {
+      var attr = document.createAttribute("hidden");
+      elm.setAttributeNode(attr);
+    }
+  });
+};
+
+arrayOfTechTablist.forEach(function (element) {
+  element.addEventListener("click", techClickHandler);
 });

@@ -23,6 +23,10 @@ body {
   background: #191b25 url("./images/background-crew-desktop.jpg") no-repeat
     center center/cover;
 }
+.technology-body {
+  background: #191b25 url("./images/background-technology-desktop.jpg")
+    no-repeat center center/cover;
+}
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -50,6 +54,10 @@ hr {
 }
 .menu-button {
   display: none;
+}
+.logo-svg {
+  width: 3.34vw;
+  height: 3.34vw;
 }
 li {
   list-style-type: none;
@@ -83,16 +91,23 @@ nav ul.navigation-list {
 }
 .navigation-list a {
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 16px;
+  font-size: 1.1vw;
   line-height: 1.5;
-  padding: 38px 0 35px 0;
+  margin-top: 2.64vw;
+  padding-bottom: 2.4vw;
   display: inline-block;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
+  letter-spacing: 2.7px;
+  border-bottom: 0.21vw solid transparent;
 }
-.visited-link,
-.visited-link:hover {
-  border-bottom: 3px solid #fff;
+.navigation-list .visited-link,
+.navigation-list .visited-link:hover,
+.tablist .visited-link,
+.tablist .visited-link:hover {
+  border-bottom-color: #fff;
+  -webkit-transition: border-bottom-color 400ms ease-in-out;
+  -o-transition: border-bottom-color 400ms ease-in-out;
+  transition: border-bottom-color 400ms ease-in-out;
 }
 
 .numbers {
@@ -195,9 +210,13 @@ a.explore-btn {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.planet-img-container{
-display:flex;
-align-items:center;
+.planet-img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .planet-image {
   aspect-ratio: attr(width) / attr(height);
@@ -223,10 +242,12 @@ align-items:center;
 .navigation-text {
   text-transform: uppercase;
   font-family: "Barlow Condensed", sans-serif;
-  font-size: 15px;
+  font-size: 1.1vw;
   line-height: 1.2;
   letter-spacing: 2.55px;
   padding-bottom: 13px;
+  color: #d0d6f9;
+  border-bottom: 3px solid transparent;
 }
 .dest-heading-2 {
   margin-top: 35px;
@@ -284,14 +305,13 @@ align-items:center;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
-  
 }
 /* flexbox-gap and no-flexbox-gap classes are given to html by feature JS detection code. That code detects browsers that do and do not support flexbox gap property (its safari 14 and below versions)  */
-.flexbox-gap .section-crew{
+.flexbox-gap .section-crew {
   gap: 5vw;
 }
-.no-flexbox-gap #specialist-image{
-margin-left:5vw;
+.no-flexbox-gap #specialist-image {
+  margin-left: 5vw;
 }
 .tab-container-crew {
   display: -webkit-box;
@@ -306,11 +326,11 @@ margin-left:5vw;
   justify-content: flex-start;
   gap: 2vw;
 }
-.flexbox-gap .tab-container-crew{
+.flexbox-gap .tab-container-crew {
   gap: 2vw;
 }
-.no-flexbox-gap .crew-tablist{
-margin-top:2vw;
+.no-flexbox-gap .crew-tablist {
+  margin-top: 2vw;
 }
 .info {
   margin-top: 15vw;
@@ -323,13 +343,16 @@ margin-top:2vw;
   text-transform: uppercase;
   color: #ffffff;
 }
-.tab-container-crew .heading-2 {
-  margin-bottom: 27px;
+.tab-container-crew .heading-2,
+.tab-container-technology .heading-2 {
+  margin-bottom: 1.9vw;
 }
 .speciality {
   color: #8f9095;
   display: block;
   margin-bottom: 15px;
+}
+.link-font-size {
   font-size: 2.25vw;
 }
 .crew-tablist {
@@ -353,38 +376,93 @@ margin-top:2vw;
   border-radius: 50%;
   background-color: #363841;
   border: 1px solid #ffffff;
-  font-size:0;
-  line-height:0;
-  color:transparent;
-  
+  font-size: 0;
+  line-height: 0;
+  color: transparent;
 }
 .active-circle,
 .active-circle:hover {
   background-color: #ffffff !important;
+  color: #0b0d17 !important;
 }
 #specialist-image {
   aspect-ratio: attr(width) / attr(height);
   width: 35.7vw;
- 
+
   -webkit-box-shadow: 0px 0.2vw 0px #383b4b;
   box-shadow: 0px 0.2vw 0px #383b4b;
 }
 .flexbox-gap #specialist-image {
- height: auto;
+  height: auto;
 }
-.no-flexbox-gap .douglas{
-height:calc(35.7vw*calc(675/514))
+.no-flexbox-gap .douglas {
+  height: calc(35.7vw * calc(675 / 514));
 }
-.no-flexbox-gap .shuttleworth{
-height:calc(35.7vw*calc(568/433))
+.no-flexbox-gap .shuttleworth {
+  height: calc(35.7vw * calc(568 / 433));
 }
-.no-flexbox-gap .glover{
-height:calc(35.7vw*calc(645/549))
+.no-flexbox-gap .glover {
+  height: calc(35.7vw * calc(645 / 549));
 }
-.no-flexbox-gap .anousheh{
-height:calc(35.7vw*calc(602/575))
+.no-flexbox-gap .anousheh {
+  height: calc(35.7vw * calc(602 / 575));
 }
+/* Technology page specific styles */
 
+.section-technology {
+  margin: 1.8vw 0 7vw 11.45%;
+  width: 88.55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.tab-container-technology {
+  margin-top: 7.7vw;
+  width: 43.75vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.technology-tablist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  height: 24vw;
+}
+.technology-circles {
+  display: inline-block;
+  width: 5.5vw;
+  height: 5.5vw;
+  border-radius: 50%;
+  border: #8f9095 solid 1px;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Bellefair", sans-serif;
+  line-height: 5.5vw;
+}
+.info-technology {
+  width: 32.83vw;
+}
+.terminology {
+  display: block;
+}
+.technology-picture {
+  width: 35.5vw;
+  height: 36.59vw;
+}
 /*targeting pointer supported devices for  links.*/
 @media (hover: hover) and (pointer: fine) {
   a.explore-btn:hover {
@@ -393,10 +471,24 @@ height:calc(35.7vw*calc(602/575))
   }
   .navigation-list a:hover,
   .tablist a:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+    border-bottom-color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: border-bottom-color 400ms ease-in-out;
+    -o-transition: border-bottom-color 400ms ease-in-out;
+    transition: border-bottom-color 400ms ease-in-out;
   }
-  .crew-tablist a.circle:hover, a.circle:focus {
+  .crew-tablist a.circle:hover,
+  a.circle:focus {
     background-color: #86878c;
+    -webkit-transition: background-color 400ms ease-in-out;
+    -o-transition: background-color 400ms ease-in-out;
+    transition: background-color 400ms ease-in-out;
+  }
+  .technology-circles:hover,
+  .technology-circles:focus {
+    border-color: #ffffff;
+    -webkit-transition: border-color 400ms ease-in-out;
+    -o-transition: border-color 400ms ease-in-out;
+    transition: border-color 400ms ease-in-out;
   }
 }
 @media (max-width: 48em) {
@@ -415,11 +507,18 @@ height:calc(35.7vw*calc(602/575))
     -ms-transform: translateX(3.5vw);
     transform: translateX(3.5vw);
   }
+  .logo-svg {
+    width: 6.3vw;
+    height: 6.3vw;
+  }
   nav ul.navigation-list {
     width: 75vw;
   }
   .navigation-list a {
-    font-size: 14px;
+    font-size: 1.82vw;
+    margin-top: 5.2vw;
+    padding-bottom: 4.84vw;
+    border-bottom: 0.4vw solid transparent;
   }
   .numbers {
     display: none;
@@ -498,6 +597,9 @@ height:calc(35.7vw*calc(602/575))
     width: 47vw;
     margin: 0 auto;
   }
+  .navigation-text {
+    font-size: 2.2vw;
+  }
   .dest-heading-2 {
     font-size: 10.6vw;
     text-align: center;
@@ -526,26 +628,25 @@ height:calc(35.7vw*calc(602/575))
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-   
   }
-  .flexbox-gap .section-crew{
-     gap: 5.2vw !important;
-}
-  .no-flexbox-gap #specialist-image{
-    margin-top:5.2vw;
-}
-.no-flexbox-gap .douglas{
-height:calc(59.4vw*calc(675/514))
-}
-.no-flexbox-gap .shuttleworth{
-height:calc(59.4vw*calc(568/433))
-}
-.no-flexbox-gap .glover{
-height:calc(59.4vw*calc(645/549))
-}
-.no-flexbox-gap .anousheh{
-height:calc(59.4vw*calc(602/575))
-}
+  .flexbox-gap .section-crew {
+    gap: 5.2vw !important;
+  }
+  .no-flexbox-gap #specialist-image {
+    margin-top: 5.2vw;
+  }
+  .no-flexbox-gap .douglas {
+    height: calc(59.4vw * calc(675 / 514));
+  }
+  .no-flexbox-gap .shuttleworth {
+    height: calc(59.4vw * calc(568 / 433));
+  }
+  .no-flexbox-gap .glover {
+    height: calc(59.4vw * calc(645 / 549));
+  }
+  .no-flexbox-gap .anousheh {
+    height: calc(59.4vw * calc(602 / 575));
+  }
   .tab-container-crew {
     -webkit-box-align: center;
     -ms-flex-align: center;
@@ -561,7 +662,7 @@ height:calc(59.4vw*calc(602/575))
   .crew-paragraph {
     width: 60vw;
   }
-  .speciality {
+  .link-font-size {
     font-size: 3.2vw;
   }
   .crew-tablist {
@@ -574,6 +675,46 @@ height:calc(59.4vw*calc(602/575))
   }
   #specialist-image {
     width: 59.4vw;
+  }
+  /* Technology page specific styles */
+
+  .section-technology {
+    margin: 7.81vw 0 6.73vw 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .tab-container-technology {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 59.53vw;
+    margin: 7.3vw auto 0 auto;
+  }
+  .technology-tablist {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: auto;
+    width: 27.34vw;
+    margin: 0 auto;
+  }
+  .technology-circles {
+    width: 7.8vw;
+    height: 7.8vw;
+    line-height: 7.8vw;
+  }
+  .info-technology {
+    width: 59.63vw;
+    margin-top: 6vw;
+  }
+  .technology-picture {
+    width: 100%;
+    height: 40.36vw;
   }
 }
 
@@ -594,6 +735,10 @@ height:calc(59.4vw*calc(602/575))
     -webkit-transform: translateX(-5vw);
     -ms-transform: translateX(-5vw);
     transform: translateX(-5vw);
+  }
+  .logo-svg {
+    width: 10.65vw;
+    height: 10.65vw;
   }
   .visible {
     -webkit-transform: scale(1) !important;
@@ -616,6 +761,7 @@ height:calc(59.4vw*calc(602/575))
     -ms-flex-align: start;
     align-items: flex-start;
     padding-top: 80px;
+    padding-left: 10vw;
     -webkit-transform: scale(0);
     -ms-transform: scale(0);
     transform: scale(0);
@@ -674,6 +820,9 @@ height:calc(59.4vw*calc(602/575))
     width: 63.2vw;
     height: 28px;
   }
+  .navigation-text {
+    font-size: 3.7vw;
+  }
   .dest-heading-2 {
     margin-top: 20px;
     font-size: 15vw;
@@ -696,29 +845,32 @@ height:calc(59.4vw*calc(602/575))
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    
     width: 87.2vw;
   }
-  .flexbox-gap .section-crew{
+  .flexbox-gap .section-crew {
     gap: 8.5vw !important;
-}
-  .no-flexbox-gap .tab-container-crew{
- margin-top:8.5vw;
+  }
+  .no-flexbox-gap .tab-container-crew {
+    margin-top: 8.5vw;
   }
   .tab-container-crew {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse;
-    margin-bottom:4vh;
+    margin-bottom: 4vh;
   }
   .heading-2 {
     font-size: 6.4vw;
   }
+  .tab-container-crew .heading-2,
+  .tab-container-technology .heading-2 {
+    margin-bottom: 4.3vw;
+  }
   .crew-paragraph {
     width: 87.2vw;
   }
-  .speciality {
+  .link-font-size {
     font-size: 4.3vw;
   }
   .crew-tablist {
@@ -728,16 +880,36 @@ height:calc(59.4vw*calc(602/575))
   #specialist-image {
     width: 47.2vw;
   }
-  .no-flexbox-gap .douglas{
-height:calc(47.2vw*calc(675/514))
-}
-.no-flexbox-gap .shuttleworth{
-height:calc(47.2vw*calc(568/433))
-}
-.no-flexbox-gap .glover{
-height:calc(47.2vw*calc(645/549))
-}
-.no-flexbox-gap .anousheh{
-height:calc(47.2vw*calc(602/575))
-}
+  .no-flexbox-gap .douglas {
+    height: calc(47.2vw * calc(675 / 514));
+  }
+  .no-flexbox-gap .shuttleworth {
+    height: calc(47.2vw * calc(568 / 433));
+  }
+  .no-flexbox-gap .glover {
+    height: calc(47.2vw * calc(645 / 549));
+  }
+  .no-flexbox-gap .anousheh {
+    height: calc(47.2vw * calc(602 / 575));
+  }
+  /* Technology page specific styles */
+
+  .section-technology {
+    margin: 8.5vw 0 21.6vw 0;
+  }
+  .tab-container-technology {
+    margin-top: 9vw;
+    width: 87.2vw;
+  }
+  .technology-tablist {
+    width: 40.53vw;
+  }
+  .technology-circles {
+    width: 10.66vw;
+    height: 10.66vw;
+    line-height: 10.66vw;
+  }
+  .info-technology {
+    width: 87.2vw;
+  }
 }
