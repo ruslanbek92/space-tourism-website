@@ -160,5 +160,34 @@ Iphone Pro 9.7 inch on Safari 14, Iphone 11 on 14, Iphone 11 Pro on 14, iphone 8
 Results:
 All tests succeeded in all devices, browsers and versions! 
 
-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+                                                    
+                                                                            Technology Page
+                                                                                 
+Desktop Browser Testing:
+
+Testing done for tests-
+Bg Img presence and color fallback in case of low network.
+Tab functionality: tab button has different colors for different states. tab is switched images when clicked. 
+Respponsiveness.
+Keyboard accessibility
+
+Browsers and versions:
+Same mentioned in Home Page.
+
+Results:
+Everything is behaved as expected in all browsers and versions except from Safari. In safari versions navigation background color with blur effect didn't worked. Couldn't find its reason and simple didn't apply blur to safari. As a result navigation had bg without blur. 
+
+Mobile/Tablet Browser Testing:
+
+Testing done for  tests-
+Bg Img presence.
+smooth switching of the tab and picture in the tab panel. 
+Tab picture layout.
+navigation menu function. 
+
+Devices and browsers:
+Same devices and browsers as in other patients. 
+Result:all tests succeeded. 
+
 
