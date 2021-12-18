@@ -173,9 +173,9 @@ var techClickHandler = function clickHandler(e) {
 
       switch (e.target.id) {
         case "vehicle-tab":
-          techImg.src = "/image-launch-vehicle-landscape.jpg";
-          imgFirstSrc.srcset = "/image-launch-vehicle-landscape.jpg";
-          imgSecondSrc.srcset = "/image-launch-vehicle-portrait.jpg";
+          techImg.src = "/image-launch-vehicle-landscape.b18773b3.jpg";
+          imgFirstSrc.srcset = "/image-launch-vehicle-landscape.b18773b3.jpg";
+          imgSecondSrc.srcset = "/image-launch-vehicle-portrait.f94ed212.jpg";
           break;
 
         case "spaceport-tab":
