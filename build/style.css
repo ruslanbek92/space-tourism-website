@@ -90,6 +90,11 @@ nav ul.navigation-list {
   }
   
 }
+@media not all and (min-resolution:.001dpcm) { 
+     @supports (-webkit-appearance:none) {
+       background-color: #0b2945;   
+     }
+}
 .navigation-list a {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.1vw;
