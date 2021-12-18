@@ -173,21 +173,21 @@ var techClickHandler = function clickHandler(e) {
 
       switch (e.target.id) {
         case "vehicle-tab":
-          techImg.src = "../images/image-launch-vehicle-landscape.jpg";
-          imgFirstSrc.srcset = "../images/image-launch-vehicle-landscape.jpg";
-          imgSecondSrc.srcset = "../images/image-launch-vehicle-portrait.jpg";
+          techImg.src = "/image-launch-vehicle-landscape.jpg";
+          imgFirstSrc.srcset = "/image-launch-vehicle-landscape.jpg";
+          imgSecondSrc.srcset = "/image-launch-vehicle-portrait.jpg";
           break;
 
         case "spaceport-tab":
-          techImg.src = "../images/image-spaceport-landscape.jpg";
-          imgFirstSrc.srcset = "../images/image-spaceport-landscape.jpg";
-          imgSecondSrc.srcset = "../images/image-spaceport-portrait.jpg";
+          techImg.src = "/image-spaceport-landscape.jpg";
+          imgFirstSrc.srcset = "/image-spaceport-landscape.jpg";
+          imgSecondSrc.srcset = "/image-spaceport-portrait.jpg";
           break;
 
         case "capsule-tab":
-          techImg.src = "../images/image-space-capsule-landscape.jpg";
-          imgFirstSrc.srcset = "../images/image-space-capsule-landscape.jpg";
-          imgSecondSrc.srcset = "../images/image-space-capsule-portrait.jpg";
+          techImg.src = "/image-space-capsule-landscape.jpg";
+          imgFirstSrc.srcset = "/image-space-capsule-landscape.jpg";
+          imgSecondSrc.srcset = "/image-space-capsule-portrait.jpg";
           break;
       }
     } else {
