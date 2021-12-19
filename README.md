@@ -27,7 +27,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Add live site URL here](https://musing-archimedes-0fbb66.netlify.app/)
+- Live Site URL: [https://musing-archimedes-0fbb66.netlify.app/]()
 
 ## My process
 
@@ -68,14 +68,14 @@ Responsive Desing, JS DOM Manipulation.
 
 ### Useful resources
 
-- [resource 1](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools) - This helped me for getting guide to set complete toolchain for the project, and how to deploy it on the web. I really liked this pattern and will use it going forward.
-- [resource 2](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing) - This series of articles from Mozilla Front End Course helped me to make a cross browser testing strategy, handling JS, Css, HTML and accessibility problems, feature detection, learning screen readers, task runners, auditing tools, cross browser compatibility.
-- [resource 3](https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#accessibility_testing_checklist)- a very useful checklist for carrying accessibility testing. Checked project for an accessibility leaning on instruction given in the checklist.
-- [resource 4](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images)-this article helped me to learn things like resolution switching, art direction.
-- [resource 5](https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images))-this was usefil in understanding the importance of setting with and height to img, solving cumulative layout shoft problem in case of responsive design.
-- [resource 6:statcounter](https://gs.statcounter.com/)-Based on data from this source I have made a cross browser compatibility support plan.
-- [resource 7:caniuse](https://caniuse.com)-This service was useful in finding out features and technologies' cross browser compatibility.
-- [resource 7:MDN reference ](https://developer.mozilla.org/en-US/docs/Web)-There I got competence information aboout html, css , js and their cross browser compatibility.
+- [https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools] - This helped me for getting guide to set complete toolchain for the project, and how to deploy it on the web. I really liked this pattern and will use it going forward.
+- [https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing] - This series of articles from Mozilla Front End Course helped me to make a cross browser testing strategy, handling JS, Css, HTML and accessibility problems, feature detection, learning screen readers, task runners, auditing tools, cross browser compatibility.
+- [https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Accessibility#accessibility_testing_checklist]- a very useful checklist for carrying accessibility testing. Checked project for an accessibility leaning on instruction given in the checklist.
+- [https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images]-this article helped me to learn things like resolution switching, art direction.
+- [https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images]-this was usefil in understanding the importance of setting with and height to img, solving cumulative layout shoft problem in case of responsive design.
+- [https://gs.statcounter.com/]-Based on data from this source I have made a cross browser compatibility support plan.
+- [https://caniuse.com]-This service was useful in finding out features and technologies' cross browser compatibility.
+- [https://developer.mozilla.org/en-US/docs/Web]-There I got competence information aboout html, css , js and their cross browser compatibility.
 
 #### Cross Browser compatiblity support plan
 
