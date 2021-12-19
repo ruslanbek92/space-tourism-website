@@ -77,7 +77,7 @@ Responsive Desing, JS DOM Manipulation.
 - [https://caniuse.com]-This service was useful in finding out features and technologies' cross browser compatibility.
 - [https://developer.mozilla.org/en-US/docs/Web]-There I got competence information aboout html, css , js and their cross browser compatibility.
 
-#### Cross Browser compatiblity support plan
+### Cross Browser compatiblity support plan
 
 A Grade: Chrome 95 94.0 93, Firefox 94 93 92 , Edge 95,94,93 for Windows,Safari for Mac 15,14 13. Android stock browser, Chrome for mobile 95, 94, Safari for Iphone/Ipad 15, 14, 13,
 
