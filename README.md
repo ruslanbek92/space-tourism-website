@@ -12,7 +12,9 @@ This is a solution to the [Space tourism website challenge on Frontend Mentor](h
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
-  - [Project toolchain](#project-toolchain) -[Cross Browser Testing Report](#cross-browser-testing-report)
+  - [Project toolchain](#project-toolchain)
+  - [Accessibility Statement](#accessibility-statement)
+  - [Cross Browser Testing Report](#cross-browser-testing-report)
 - [Author](#author)
 
 ## Overview
